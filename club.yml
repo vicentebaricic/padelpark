@@ -133,7 +133,7 @@ textos:
 estilo:
   tipografia: cursiva     # gruesa e inclinada, como el logo
   forma: redonda          # como el pin del logo
-  hero: dividido          # El Club (también en Chicureo) usa el héroe completo
+  hero: completo          # video a pantalla completa
   etiquetas: barra
   variante_textos: 1
   secciones: [club, metodo, banda, garantia, equipo, resenas, partners, visita, cta]
