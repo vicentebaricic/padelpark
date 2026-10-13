@@ -54,7 +54,10 @@ horarios:
   6: 08:00 – 22:00
 
 hero:
-  poster: assets/fotos/hero.jpg        # foto de stock (muestra): reemplazar por foto o video del club
+  video: assets/video/hero                  # video de Polo Padel (muestra): reemplazar por video propio del club
+  video_vertical: assets/video/hero-mobile  # versión 9:16 para celulares
+  poster: assets/video/hero-poster.jpg
+  poster_vertical: assets/video/hero-mobile-poster.jpg
 
 dato_hero:
   numero: "4"
