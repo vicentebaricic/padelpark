@@ -1,0 +1,143 @@
+# =====================================================================
+#  PADEL PARK — Chicureo
+#  Datos reales: nombre, logo, WhatsApp (también para reservas), Instagram, zona.
+#  Todo lo marcado con "muestra" es contenido de ejemplo: reemplazar cuando
+#  el club entregue la información (dirección, horarios, precios, equipo,
+#  reseñas, fotos y videos propios).
+#  Generar: python3 ../plantilla-padel/build.py club.yml
+# =====================================================================
+
+nombre: Padel Park
+slug: padelpark
+salida: .
+
+seo:
+  titulo: Padel Park · Club de pádel en Chicureo
+  descripcion: Club de pádel en Chicureo. Clases por nivel, partidos todas las semanas y comunidad. Reserva tu cancha por WhatsApp.
+  imagen: assets/marca/logo-original.jpg
+
+marca:
+  logo: assets/marca/logo.png          # pin + CLUB PADEL PARK, blanco sin fondo
+  logo_ancho: 733
+  logo_alto: 311
+  favicon: assets/marca/favicon.png
+  apple_icon: assets/marca/favicon.png
+
+contacto:
+  whatsapp: "56940421250"
+  whatsapp_visible: +56 9 4042 1250
+  reservas:                            # las reservas se hacen por WhatsApp
+    nombre: WhatsApp
+    url: https://wa.me/56940421250?text=Hola%20Padel%20Park%2C%20quiero%20reservar%20una%20cancha.
+  instagram: https://www.instagram.com/padelparkchile/
+  facebook: ""
+
+ubicacion:
+  barrio: Chicureo
+  zona: Colina · Santiago
+  comuna: Colina
+  direccion: Chicureo, Colina
+  referencia: Dirección exacta por confirmar
+  direccion_corta: Chicureo, Colina
+  direccion_completa: Chicureo, Colina, Región Metropolitana
+  mapa: Chicureo, Colina, Chile
+  muestra: true                        # falta la dirección exacta
+
+horarios_muestra: true                 # horarios de ejemplo
+horarios:
+  0: 09:00 – 21:00
+  1: 07:00 – 23:00
+  2: 07:00 – 23:00
+  3: 07:00 – 23:00
+  4: 07:00 – 23:00
+  5: 07:00 – 23:00
+  6: 08:00 – 22:00
+
+hero:
+  video: assets/video/hero                  # video de Polo Padel (muestra): reemplazar por video propio del club
+  video_vertical: assets/video/hero-mobile  # versión 9:16 para celulares
+  poster: assets/video/hero-poster.jpg
+  poster_vertical: assets/video/hero-mobile-poster.jpg
+
+dato_hero:
+  numero: "4"
+  texto: "canchas en<br>Chicureo"
+  muestra: true
+
+metodo:
+  nombre: Método Park
+  titulo_html: "Método <em>Park.</em>"
+  foto: assets/fotos/partido.jpg       # foto de stock (muestra)
+  foto_alt: Jugador de pádel descansando en el pasto sintético después de un partido
+  muestra: true
+
+garantia:
+  dias: 60
+  muestra: true
+
+banda:
+  imagen: assets/fotos/palas.jpg       # foto de stock (muestra)
+  alt: Palas de pádel junto a la red
+
+partners_muestra: true                 # logos de ejemplo: reemplazar por los auspiciadores reales
+partners:
+  - { nombre: Babolat, logo: assets/partners/babolat.png, ancho: 480, alto: 105 }
+  - { nombre: Bullpadel, logo: assets/partners/bullpadel.png, ancho: 147, alto: 120 }
+  - { nombre: adidas, logo: assets/partners/adidas.png, ancho: 184, alto: 120 }
+  - { nombre: Gatorade, logo: assets/partners/gatorade.png, ancho: 155, alto: 120 }
+
+equipo_muestra: true
+equipo:
+  - { nombre: Nombre Apellido, cargo: Fundador, foto: assets/equipo/equipo-1.jpg, bio: "Texto de ejemplo: quién es, cuánto lleva jugando y por qué creó Padel Park." }
+  - { nombre: Nombre Apellido, cargo: Head coach, foto: assets/equipo/equipo-2.jpg, bio: "Texto de ejemplo: experiencia como jugador y entrenador, y cómo arma los grupos." }
+  - { nombre: Nombre Apellido, cargo: Entrenador, foto: assets/equipo/equipo-3.jpg, bio: "Texto de ejemplo: especialidad (iniciación, competencia, niños…)." }
+
+resenas:
+  nota: "5,0"
+  cantidad: 40
+  muestra: true
+  lista:
+    - { nombre: Nombre A., detalle: "Socio · ejemplo", texto: "Reseña de ejemplo: aquí va una opinión real de Google sobre las clases y los profes." }
+    - { nombre: Nombre B., detalle: "Socia · ejemplo", texto: "Reseña de ejemplo: aquí va una opinión real sobre las canchas y el ambiente." }
+    - { nombre: Nombre C., detalle: "Jugador · ejemplo", texto: "Reseña de ejemplo: aquí va una opinión real sobre los partidos y torneos." }
+
+precios:
+  grupos: [4, 2]
+  mensual: { 4: 49990, 2: 79990 }
+  anual:   { 4: 41990, 2: 66990 }
+  muestra: true
+
+# Colores del logo: fondo carbón, hoja verde y gota azul
+paleta:
+  marca: "#272A2B"        # carbón del fondo del logo
+  oscuro: "#161819"
+  acento: "#7DBA00"       # verde de las hojas
+  tono: "#0A9BDC"         # azul de la gota
+  tono_oscuro: "#0070A8"
+  crema: "#F3F5EF"
+  fondo_claro: "#F8FAF5"
+  ajustes:
+    clara:                # en fondo claro el verde se oscurece para que se lea, y los botones son verdes
+      hl: "#4A7D00"
+      focus: "#4A7D00"
+      btn-bg: "var(--ball)"
+      btn-text: "var(--navy)"
+
+textos:
+  botones:
+    reservar_largo: Reservar cancha por WhatsApp
+  footer:
+    lema: "El club de pádel de Chicureo. Entrena, conecta, compite."
+    reservas: Reservas
+
+estilo:
+  tipografia: cursiva     # gruesa e inclinada, como el logo
+  forma: redonda          # como el pin del logo
+  hero: completo          # video a pantalla completa
+  etiquetas: barra
+  variante_textos: 1
+  secciones: [club, metodo, banda, garantia, equipo, resenas, partners, visita, cta]
+  menu: [club, metodo, precios, equipo, visita]
+  propuesta_inicial: marca
+  selector_propuestas: true
+  nombres_propuestas: { marca: "A · Carbón", clara: "B · Clara" }
